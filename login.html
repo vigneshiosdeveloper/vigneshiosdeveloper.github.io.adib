@@ -90,14 +90,14 @@
     const ANDROID_PLAY_STORE =
       "https://play.google.com/store/apps/details?id=com.intellectdesign.cbx";
 
-    function buildParams(platform) {
-      return (
-        "?flow=businessLogin" +
-        "&platform=" + encodeURIComponent(platform) +
-        "&userId=999" +
-        "&token=ABCDEF"
-      );
-    }
+    // function buildParams(platform) {
+    //   return (
+    //     "?flow=businessLogin" +
+    //     "&platform=" + encodeURIComponent(platform) +
+    //     "&userId=999" +
+    //     "&token=ABCDEF"
+    //   );
+    // }
 
     // 🔹 iOS: if user is seeing this page, universal link did not open the app.
     // So just send them to the App Store.
@@ -107,11 +107,11 @@
 
     // 🔹 Android: use custom scheme + Play Store fallback.
     function openForAndroid() {
-      const params = buildParams("android");
-      const appUrl = "openfinance://login" + params;
+      // const params = buildParams("android");
+      // const appUrl = "openfinance://login" + params;
 
       // Try opening Android app
-      window.location.href = appUrl;
+      window.location.href = ANDROID_PLAY_STORE;
 
       // Fallback to Play Store
       setTimeout(function () {
