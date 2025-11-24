@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.adib.cbx",
+      "sha256_cert_fingerprints": [
+        "EC:B0:69:9B:7F:FD:AC:A8:EC:FB:BC:11:FF:2D:83:45:BD:6F:F1:24:02:8B:57:3F:9B:12:E2:A8:1C:86:68:1B"
+      ]
+    }
+  }
+]
